@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B60AAC22714BB8000B2A72E /* UPS_Capacity_calculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B60AAC12714BB8000B2A72E /* UPS_Capacity_calculatorApp.swift */; };
+		2B60AAC42714BB8000B2A72E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B60AAC32714BB8000B2A72E /* ContentView.swift */; };
+		2B60AAC62714BB8200B2A72E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B60AAC52714BB8200B2A72E /* Assets.xcassets */; };
+		2B60AAC92714BB8200B2A72E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B60AAC82714BB8200B2A72E /* Preview Assets.xcassets */; };
+		2B60AAD32714BB8200B2A72E /* UPS_Capacity_calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B60AAD22714BB8200B2A72E /* UPS_Capacity_calculatorTests.swift */; };
+		2B60AADD2714BB8200B2A72E /* UPS_Capacity_calculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B60AADC2714BB8200B2A72E /* UPS_Capacity_calculatorUITests.swift */; };
+		2B60AADF2714BB8200B2A72E /* UPS_Capacity_calculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B60AADE2714BB8200B2A72E /* UPS_Capacity_calculatorUITestsLaunchTests.swift */; };
+		2B60AAEC27199D9A00B2A72E /* UPSCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B60AAEB27199D9A00B2A72E /* UPSCalculator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B60AACF2714BB8200B2A72E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B60AAB62714BB7F00B2A72E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B60AABD2714BB8000B2A72E;
+			remoteInfo = "UPS Capacity calculator";
+		};
+		2B60AAD92714BB8200B2A72E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B60AAB62714BB7F00B2A72E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B60AABD2714BB8000B2A72E;
+			remoteInfo = "UPS Capacity calculator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B60AABE2714BB8000B2A72E /* UPS Capacity calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UPS Capacity calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B60AAC12714BB8000B2A72E /* UPS_Capacity_calculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPS_Capacity_calculatorApp.swift; sourceTree = "<group>"; };
+		2B60AAC32714BB8000B2A72E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2B60AAC52714BB8200B2A72E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B60AAC82714BB8200B2A72E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2B60AACE2714BB8200B2A72E /* UPS Capacity calculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UPS Capacity calculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B60AAD22714BB8200B2A72E /* UPS_Capacity_calculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPS_Capacity_calculatorTests.swift; sourceTree = "<group>"; };
+		2B60AAD82714BB8200B2A72E /* UPS Capacity calculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UPS Capacity calculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B60AADC2714BB8200B2A72E /* UPS_Capacity_calculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPS_Capacity_calculatorUITests.swift; sourceTree = "<group>"; };
+		2B60AADE2714BB8200B2A72E /* UPS_Capacity_calculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPS_Capacity_calculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2B60AAEB27199D9A00B2A72E /* UPSCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPSCalculator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B60AABB2714BB8000B2A72E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B60AACB2714BB8200B2A72E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B60AAD52714BB8200B2A72E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B60AAB52714BB7F00B2A72E = {
+			isa = PBXGroup;
+			children = (
+				2B60AAC02714BB8000B2A72E /* UPS Capacity calculator */,
+				2B60AAD12714BB8200B2A72E /* UPS Capacity calculatorTests */,
+				2B60AADB2714BB8200B2A72E /* UPS Capacity calculatorUITests */,
+				2B60AABF2714BB8000B2A72E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B60AABF2714BB8000B2A72E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B60AABE2714BB8000B2A72E /* UPS Capacity calculator.app */,
+				2B60AACE2714BB8200B2A72E /* UPS Capacity calculatorTests.xctest */,
+				2B60AAD82714BB8200B2A72E /* UPS Capacity calculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B60AAC02714BB8000B2A72E /* UPS Capacity calculator */ = {
+			isa = PBXGroup;
+			children = (
+				2B60AAC12714BB8000B2A72E /* UPS_Capacity_calculatorApp.swift */,
+				2B60AAC32714BB8000B2A72E /* ContentView.swift */,
+				2B60AAEB27199D9A00B2A72E /* UPSCalculator.swift */,
+				2B60AAC52714BB8200B2A72E /* Assets.xcassets */,
+				2B60AAC72714BB8200B2A72E /* Preview Content */,
+			);
+			path = "UPS Capacity calculator";
+			sourceTree = "<group>";
+		};
+		2B60AAC72714BB8200B2A72E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2B60AAC82714BB8200B2A72E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2B60AAD12714BB8200B2A72E /* UPS Capacity calculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B60AAD22714BB8200B2A72E /* UPS_Capacity_calculatorTests.swift */,
+			);
+			path = "UPS Capacity calculatorTests";
+			sourceTree = "<group>";
+		};
+		2B60AADB2714BB8200B2A72E /* UPS Capacity calculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2B60AADC2714BB8200B2A72E /* UPS_Capacity_calculatorUITests.swift */,
+				2B60AADE2714BB8200B2A72E /* UPS_Capacity_calculatorUITestsLaunchTests.swift */,
+			);
+			path = "UPS Capacity calculatorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B60AABD2714BB8000B2A72E /* UPS Capacity calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B60AAE22714BB8200B2A72E /* Build configuration list for PBXNativeTarget "UPS Capacity calculator" */;
+			buildPhases = (
+				2B60AABA2714BB8000B2A72E /* Sources */,
+				2B60AABB2714BB8000B2A72E /* Frameworks */,
+				2B60AABC2714BB8000B2A72E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UPS Capacity calculator";
+			productName = "UPS Capacity calculator";
+			productReference = 2B60AABE2714BB8000B2A72E /* UPS Capacity calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B60AACD2714BB8200B2A72E /* UPS Capacity calculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B60AAE52714BB8200B2A72E /* Build configuration list for PBXNativeTarget "UPS Capacity calculatorTests" */;
+			buildPhases = (
+				2B60AACA2714BB8200B2A72E /* Sources */,
+				2B60AACB2714BB8200B2A72E /* Frameworks */,
+				2B60AACC2714BB8200B2A72E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B60AAD02714BB8200B2A72E /* PBXTargetDependency */,
+			);
+			name = "UPS Capacity calculatorTests";
+			productName = "UPS Capacity calculatorTests";
+			productReference = 2B60AACE2714BB8200B2A72E /* UPS Capacity calculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2B60AAD72714BB8200B2A72E /* UPS Capacity calculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B60AAE82714BB8200B2A72E /* Build configuration list for PBXNativeTarget "UPS Capacity calculatorUITests" */;
+			buildPhases = (
+				2B60AAD42714BB8200B2A72E /* Sources */,
+				2B60AAD52714BB8200B2A72E /* Frameworks */,
+				2B60AAD62714BB8200B2A72E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B60AADA2714BB8200B2A72E /* PBXTargetDependency */,
+			);
+			name = "UPS Capacity calculatorUITests";
+			productName = "UPS Capacity calculatorUITests";
+			productReference = 2B60AAD82714BB8200B2A72E /* UPS Capacity calculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B60AAB62714BB7F00B2A72E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					2B60AABD2714BB8000B2A72E = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					2B60AACD2714BB8200B2A72E = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 2B60AABD2714BB8000B2A72E;
+					};
+					2B60AAD72714BB8200B2A72E = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 2B60AABD2714BB8000B2A72E;
+					};
+				};
+			};
+			buildConfigurationList = 2B60AAB92714BB7F00B2A72E /* Build configuration list for PBXProject "UPS Capacity calculator" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B60AAB52714BB7F00B2A72E;
+			productRefGroup = 2B60AABF2714BB8000B2A72E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B60AABD2714BB8000B2A72E /* UPS Capacity calculator */,
+				2B60AACD2714BB8200B2A72E /* UPS Capacity calculatorTests */,
+				2B60AAD72714BB8200B2A72E /* UPS Capacity calculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B60AABC2714BB8000B2A72E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B60AAC92714BB8200B2A72E /* Preview Assets.xcassets in Resources */,
+				2B60AAC62714BB8200B2A72E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B60AACC2714BB8200B2A72E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B60AAD62714BB8200B2A72E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B60AABA2714BB8000B2A72E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B60AAEC27199D9A00B2A72E /* UPSCalculator.swift in Sources */,
+				2B60AAC42714BB8000B2A72E /* ContentView.swift in Sources */,
+				2B60AAC22714BB8000B2A72E /* UPS_Capacity_calculatorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B60AACA2714BB8200B2A72E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B60AAD32714BB8200B2A72E /* UPS_Capacity_calculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B60AAD42714BB8200B2A72E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B60AADD2714BB8200B2A72E /* UPS_Capacity_calculatorUITests.swift in Sources */,
+				2B60AADF2714BB8200B2A72E /* UPS_Capacity_calculatorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B60AAD02714BB8200B2A72E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B60AABD2714BB8000B2A72E /* UPS Capacity calculator */;
+			targetProxy = 2B60AACF2714BB8200B2A72E /* PBXContainerItemProxy */;
+		};
+		2B60AADA2714BB8200B2A72E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B60AABD2714BB8000B2A72E /* UPS Capacity calculator */;
+			targetProxy = 2B60AAD92714BB8200B2A72E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2B60AAE02714BB8200B2A72E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2B60AAE12714BB8200B2A72E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B60AAE32714BB8200B2A72E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UPS Capacity calculator/Preview Content\"";
+				DEVELOPMENT_TEAM = 4V2D72S45C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.WesleyDeGroot.UPS-Capacity-calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B60AAE42714BB8200B2A72E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UPS Capacity calculator/Preview Content\"";
+				DEVELOPMENT_TEAM = 4V2D72S45C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.WesleyDeGroot.UPS-Capacity-calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2B60AAE62714BB8200B2A72E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4V2D72S45C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.WesleyDeGroot.UPS-Capacity-calculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UPS Capacity calculator.app/UPS Capacity calculator";
+			};
+			name = Debug;
+		};
+		2B60AAE72714BB8200B2A72E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4V2D72S45C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.WesleyDeGroot.UPS-Capacity-calculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UPS Capacity calculator.app/UPS Capacity calculator";
+			};
+			name = Release;
+		};
+		2B60AAE92714BB8200B2A72E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4V2D72S45C;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.WesleyDeGroot.UPS-Capacity-calculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "UPS Capacity calculator";
+			};
+			name = Debug;
+		};
+		2B60AAEA2714BB8200B2A72E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4V2D72S45C;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.WesleyDeGroot.UPS-Capacity-calculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "UPS Capacity calculator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B60AAB92714BB7F00B2A72E /* Build configuration list for PBXProject "UPS Capacity calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B60AAE02714BB8200B2A72E /* Debug */,
+				2B60AAE12714BB8200B2A72E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B60AAE22714BB8200B2A72E /* Build configuration list for PBXNativeTarget "UPS Capacity calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B60AAE32714BB8200B2A72E /* Debug */,
+				2B60AAE42714BB8200B2A72E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B60AAE52714BB8200B2A72E /* Build configuration list for PBXNativeTarget "UPS Capacity calculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B60AAE62714BB8200B2A72E /* Debug */,
+				2B60AAE72714BB8200B2A72E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B60AAE82714BB8200B2A72E /* Build configuration list for PBXNativeTarget "UPS Capacity calculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B60AAE92714BB8200B2A72E /* Debug */,
+				2B60AAEA2714BB8200B2A72E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B60AAB62714BB7F00B2A72E /* Project object */;
+}
