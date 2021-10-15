@@ -7,24 +7,29 @@
 
 import Foundation
 
+/// (simple) class to Calculate the battery capacity of UPS-es.
 class UPSCalculator {
-    struct UPSBrand: Hashable {
+    /// UPS Brand
+    struct Brand: Hashable {
         var name: String
-        var types: [UPSType]
+        var types: [`Type`]
     }
 
-    struct UPSType: Hashable {
+    /// UPS Type
+    struct `Type`: Hashable {
         var type: String
         var watt: Int
         var mWatt: Int
         var time: Int
     }
 
+    /// Measurement
     struct Measurement: Hashable {
         var time: Int
         var watt: Int
     }
 
+    /// Calculationresult
     struct CalculationResult: Hashable {
         var result: Bool
         var reason: String
@@ -38,13 +43,13 @@ class UPSCalculator {
     public static let shared = UPSCalculator()
 
     /// Fake: Brand
-    public let f_brand: UPSBrand = .init(name: "", types: [.init(type: "", watt: 0, mWatt: 0, time: 0)])
-
+    public let f_brand: Brand = .init(name: "", types: [.init(type: "", watt: 0, mWatt: 0, time: 0)])
 
     /// Fake: Type
-    public let f_type: UPSType = .init(type: "", watt: 0, mWatt: 0, time: 0)
-    
-    public let UPS: [UPSBrand] = [
+    public let f_type: `Type` = .init(type: "", watt: 0, mWatt: 0, time: 0)
+
+    /// UPS Types (built-in)
+    public let UPS: [Brand] = [
         .init(
             name: "APC",
             types: [
@@ -55,12 +60,18 @@ class UPSCalculator {
         )
     ]
 
-    func calculate(withUPS: UPSType, measurement1: Measurement, measurement2: Measurement) -> CalculationResult {
-
-        if measurement1.watt != withUPS.mWatt || measurement2.watt != withUPS.mWatt {
+    /// calculate capacity
+    /// - Parameters:
+    ///   - UPS: UPS Type
+    ///   - measurement1: Measurement 1 values
+    ///   - measurement2: Measurement 1 values
+    /// - Returns: CalculationResult
+    func calculate(UPS: `Type`, measurement1: Measurement, measurement2: Measurement) -> CalculationResult {
+        // Check if measurements are done on the correct watt.
+        if measurement1.watt != UPS.mWatt || measurement2.watt != UPS.mWatt {
             return .init(
                 result: false,
-                reason: "Test with \(withUPS.mWatt)W",
+                reason: "Test with \(UPS.mWatt)W",
                 result1: 0,
                 result2: 0,
                 resultTotal: 0
@@ -77,8 +88,8 @@ class UPSCalculator {
         // =< 50 need to change
         // =< 30 CRITICAL need to change
 
-        let percentageM1 = (measurement1.time / withUPS.time) * 100
-        let percentageM2 = (measurement2.time / withUPS.time) * 100
+        let percentageM1 = (measurement1.time / UPS.time) * 100
+        let percentageM2 = (measurement2.time / UPS.time) * 100
         let percentageMT = (percentageM1 + percentageM2) / 2
 
         if percentageMT <= 30 {
@@ -114,16 +125,8 @@ class UPSCalculator {
                 resultTotal: percentageMT
             )
         }
-
-        // This one should never be executed.
-        return .init(
-            result: false,
-            reason: "Unknown error",
-            result1: 0,
-            result2: 0,
-            resultTotal: 0
-        )
     }
+
     init () {
 
     }

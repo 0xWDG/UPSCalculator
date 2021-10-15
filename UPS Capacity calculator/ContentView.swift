@@ -15,9 +15,7 @@ struct ContentView: View {
     @State var selectedType = UPSCalculator.shared.f_type
     @State var selectedWatt = "100 W"
 
-    let UPSCalc = UPSCalculator.shared
-
-    let brand = UPSCalculator.shared.UPS
+    let brands = UPSCalculator.shared.UPS
     var type = ""
 
 
@@ -38,14 +36,14 @@ struct ContentView: View {
                     }
 
                     Picker("Brand", selection: $selectedBrand) {
-                        ForEach(brand, id: \.self) {
+                        ForEach(brands, id: \.self) {
                             Text($0.name)
                         }
                     }
                     Picker("Type", selection: $selectedType) {
                         // Want here to use the SELECTED
                         // brand items only
-                        let filter = brand.filter {
+                        let filter = brands.filter {
                             $0 == selectedBrand
                         }.first?.types
 
