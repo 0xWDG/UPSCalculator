@@ -18,15 +18,15 @@ class UPSCalculator {
     /// UPS Type
     struct `Type`: Hashable {
         var type: String
-        var watt: Int
-        var mWatt: Int
-        var time: Int
+        var watt: Double
+        var mWatt: Double
+        var time: Double
     }
 
     /// Measurement
     struct Measurement: Hashable {
-        var time: Int
-        var watt: Int
+        var time: Double
+        var watt: Double
     }
 
     /// Calculationresult
@@ -34,9 +34,9 @@ class UPSCalculator {
         var result: Bool
         var reason: String
 
-        var result1: Int
-        var result2: Int
-        var resultTotal: Int
+        var result1: Double
+        var result2: Double
+        var resultTotal: Double
     }
 
     /// Shared instance
@@ -67,8 +67,10 @@ class UPSCalculator {
     ///   - measurement2: Measurement 1 values
     /// - Returns: CalculationResult
     func calculate(UPS: `Type`, measurement1: Measurement, measurement2: Measurement) -> CalculationResult {
+        print("CALCULATING")
         // Check if measurements are done on the correct watt.
         if measurement1.watt != UPS.mWatt || measurement2.watt != UPS.mWatt {
+            print("Failed")
             return .init(
                 result: false,
                 reason: "Test with \(UPS.mWatt)W",
@@ -88,9 +90,23 @@ class UPSCalculator {
         // =< 50 need to change
         // =< 30 CRITICAL need to change
 
-        let percentageM1 = (measurement1.time / UPS.time) * 100
-        let percentageM2 = (measurement2.time / UPS.time) * 100
-        let percentageMT = (percentageM1 + percentageM2) / 2
+        let percentageM1: Double = (measurement1.time / UPS.time) * 100
+        print("""
+P1 = (measurement1.time / UPS.time) * 100
+P1 = (\(measurement1.time) / \(UPS.time)) * 100
+P1 = (\(measurement1.time / UPS.time)) * 100
+P1 = \(percentageM1)
+""")
+        let percentageM2: Double = (measurement2.time / UPS.time) * 100
+        print("""
+P2 = (measurement2.time / UPS.time) * 100
+P2 = (\(measurement2.time) / \(UPS.time)) * 100
+P2 = (\(measurement2.time / UPS.time)) * 100
+P2 = \(percentageM2)
+""")
+        let percentageMT: Double = (percentageM1 + percentageM2) / 2
+
+        print("Pm1:\(percentageM1)%\nPm2:\(percentageM2)%\nPmT:\(percentageMT)%")
 
         if percentageMT <= 30 {
             return .init(
